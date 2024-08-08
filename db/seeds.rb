@@ -17,7 +17,7 @@ User.create!(email: 'abdulla@gmail.com', password: 'Abd@e123', password_confirma
   }])
 end
 
-10.times do
+5.times do
   Course.create!([{
     name: Faker::Educator.course_name,
     short_description: Faker::Lorem.paragraph,
