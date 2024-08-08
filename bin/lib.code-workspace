@@ -1,0 +1,44 @@
+{
+	"folders": [
+		{
+			"path": "../lib"
+		},
+		{
+			"path": "../log"
+		},
+		{
+			"path": "../node_modules"
+		},
+		{
+			"path": "../public"
+		},
+		{
+			"path": "../storage"
+		},
+		{
+			"path": "../test"
+		},
+		{
+			"path": "../tmp"
+		},
+		{
+			"path": "../vendor"
+		},
+		{
+			"path": "../.netlify"
+		},
+		{
+			"path": "../app"
+		},
+		{
+			"path": "."
+		},
+		{
+			"path": "../config"
+		},
+		{
+			"path": "../db"
+		}
+	],
+	"settings": {}
+}

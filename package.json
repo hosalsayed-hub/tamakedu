@@ -1,0 +1,7 @@
+{
+  "name": "suncalc",
+  "private": true,
+  "dependencies": {
+    "ntl": "^5.1.0"
+  }
+}
