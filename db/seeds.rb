@@ -32,7 +32,7 @@ end
   }])
 end
 
-10.times do
+3.times do
   Lesson.create!([{
     name: Faker::Address.unique.city,
     description: Faker::Lorem.paragraph(sentence_count: 2, supplemental: false, random_sentences_to_add: 4),
