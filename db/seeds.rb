@@ -6,9 +6,9 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-User.create!(email: 'yshmarov@gmail.com', password: 'yshmarov@gmail.com', password_confirmation: 'yshmarov@gmail.com')
-User.create!(email: 'yashm@outlook.com', password: 'yashm@outlook.com', password_confirmation: 'yashm@outlook.com')
-User.create!(email: 'admin@example.com', password: 'admin@example.com', password_confirmation: 'admin@example.com')
+User.create!(email: 'admin@gmail.com', password: 'Adm$123', password_confirmation: 'Adm$123')
+User.create!(email: 'hussam@gmail.com', password: 'Hos$123', password_confirmation: 'Hos$123')
+User.create!(email: 'abdulla@gmail.com', password: 'Abd@e123', password_confirmation: 'Abd@e123')
 
 5.times do
   Category.create!([{
@@ -17,7 +17,7 @@ User.create!(email: 'admin@example.com', password: 'admin@example.com', password
   }])
 end
 
-30.times do
+15.times do
   Course.create!([{
     name: Faker::Educator.course_name,
     short_description: Faker::Lorem.paragraph,
@@ -32,7 +32,7 @@ end
   }])
 end
 
-50.times do
+20.times do
   Lesson.create!([{
     name: Faker::Address.unique.city,
     description: Faker::Lorem.paragraph(sentence_count: 2, supplemental: false, random_sentences_to_add: 4),
@@ -42,7 +42,7 @@ end
   }])
 end
 
-3.times do
+1.times do
   Subscription.create!([{
     rating: Faker::Number.between(from: 1, to: 5),
     comment: Faker::Lorem.paragraph(sentence_count: 2, supplemental: false, random_sentences_to_add: 4),
