@@ -13,11 +13,11 @@ services:
     # preDeployCommand: "bundle exec rails db:migrate" # preDeployCommand only available on paid instance types
     startCommand: "bundle exec rails server"
     envVars:
-      - key: postgresql://coursera_postgresql_user:eUnn7zpPs2em4bTaj1NAAT7QM9oXDBIX@dpg-cqmm6btds78s73918e2g-a.oregon-postgres.render.com/coursera_postgresql
+      - key: DATABASE_URL
         fromDatabase:
           name: coursera-postgresql
           property: connectionString
-      - key: 67f51a25366dd160e122ca1fedfbf0b0
+      - key: RAILS_MASTER_KEY
         sync: false
       - key: WEB_CONCURRENCY
         value: 4 # sensible default
