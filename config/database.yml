@@ -16,4 +16,4 @@ test:
 
 production:
   <<: *default
-  database: suncalc_production
+  database: suncalc_development
