@@ -1,12 +1,12 @@
 databases:
-  - name:  coursera-postgresql
-    databaseName: postgresql
+  - name:  coursera-postgresql-omrx
+    databaseName: postgresql_iut1
     user: coursera_postgresql_user
     plan: starter
 
 services:
   - type: web
-    name: coursera-postgresql
+    name: coursera-postgresql-omrx
     runtime: ruby
     plan: free
     buildCommand: "./bin/render-build.sh"
