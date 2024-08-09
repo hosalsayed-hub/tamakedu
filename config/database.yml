@@ -1,29 +1,29 @@
 development:
-  adapter: postgresql
-  encoding: unicode
-  host: dpg-cqqjnfrv2p9s73b8nrkg-a
+  adapter: 'postgresql'
+  encoding: 'unicode'
+  host: 'dpg-cqqjnfrv2p9s73b8nrkg-a'
   username: 'coursera_postgresql_user'
   password: 'KIWn4eCO6m5GJrKbOMGC4VHsXhwfaWDg'
-  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
-  database: postgresql_iut1
+  pool:  5 
+  database: 'postgresql_iut1'
 
 test:
-  adapter: postgresql
-  encoding: unicode
-  host: dpg-cqqjnfrv2p9s73b8nrkg-a
+  adapter: 'postgresql'
+  encoding: 'unicode'
+  host: 'dpg-cqqjnfrv2p9s73b8nrkg-a'
   username: 'coursera_postgresql_user'
   password: 'KIWn4eCO6m5GJrKbOMGC4VHsXhwfaWDg'
-  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
-  database: postgresql_iut1
+  pool:  5 
+  database: 'postgresql_iut1'
 
 production:
-  adapter: postgresql
-  encoding: unicode
-  host: dpg-cqqjnfrv2p9s73b8nrkg-a
+  adapter: 'postgresql'
+  encoding: 'unicode'
+  host: 'dpg-cqqjnfrv2p9s73b8nrkg-a'
   username: 'coursera_postgresql_user'
   password: 'KIWn4eCO6m5GJrKbOMGC4VHsXhwfaWDg'
-  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
-  database: postgresql_iut1
+  pool:  5 
+  database: 'postgresql_iut1'
 
 
 
