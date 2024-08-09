@@ -1,29 +1,27 @@
 development:
   adapter: 'postgresql'
   encoding: 'unicode'
- 
+  database: 'postgresql_iut1'
   username: 'coursera_postgresql_user'
   password: 'KIWn4eCO6m5GJrKbOMGC4VHsXhwfaWDg'
   pool:  5 
-  database: 'postgresql_iut1'
+  
 
 test:
   adapter: 'postgresql'
   encoding: 'unicode'
-  
+  database: 'postgresql_iut1'
   username: 'coursera_postgresql_user'
   password: 'KIWn4eCO6m5GJrKbOMGC4VHsXhwfaWDg'
   pool:  5 
-  database: 'postgresql_iut1'
 
 production:
   adapter: 'postgresql'
   encoding: 'unicode'
-  
+  database: 'postgresql_iut1'
   username: 'coursera_postgresql_user'
   password: 'KIWn4eCO6m5GJrKbOMGC4VHsXhwfaWDg'
   pool:  5 
-  database: 'postgresql_iut1'
 
 
 
