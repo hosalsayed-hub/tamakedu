@@ -1,7 +1,7 @@
 development:
   adapter: 'postgresql'
   encoding: 'unicode'
-  host: 'dpg-cqqjnfrv2p9s73b8nrkg-a'
+  host: 'coursera-postgresql-omrx'
   username: 'coursera_postgresql_user'
   password: 'KIWn4eCO6m5GJrKbOMGC4VHsXhwfaWDg'
   pool:  5 
@@ -10,7 +10,7 @@ development:
 test:
   adapter: 'postgresql'
   encoding: 'unicode'
-  host: 'dpg-cqqjnfrv2p9s73b8nrkg-a'
+  host: 'coursera-postgresql-omrx'
   username: 'coursera_postgresql_user'
   password: 'KIWn4eCO6m5GJrKbOMGC4VHsXhwfaWDg'
   pool:  5 
@@ -19,7 +19,7 @@ test:
 production:
   adapter: 'postgresql'
   encoding: 'unicode'
-  host: 'dpg-cqqjnfrv2p9s73b8nrkg-a'
+  host: 'coursera-postgresql-omrx'
   username: 'coursera_postgresql_user'
   password: 'KIWn4eCO6m5GJrKbOMGC4VHsXhwfaWDg'
   pool:  5 
