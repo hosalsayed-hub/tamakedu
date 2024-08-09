@@ -1,8 +1,6 @@
 RRails.application.routes.draw do
     get 'render/index'
     # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
-    ENV['BUNDLE_GEMFILE'] ||= File.expand_path('../../Gemfile', __FILE__)
-
     require 'bundler/setup'
     require 'bootsnap/setup'
     # Reveal health status on /up that returns 200 if the app boots with no exceptions, otherwise 500.
