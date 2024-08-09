@@ -1,19 +1,30 @@
-default: &default
+development:
   adapter: postgresql
-  encoding: unicode
-  host: dpg-cqqjnfrv2p9s73b8nrkg-a
+  encoding: utf8
+  reconnect: false
+  database: postgresql_iut1
+  pool: 5
   username: coursera_postgresql_user
   password: KIWn4eCO6m5GJrKbOMGC4VHsXhwfaWDg
-  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
-
-development:
-  <<: *default
-  database: coursera_postgresql
+  host: localhost
 
 test:
-  <<: *default
-  database: coursera_postgresql
+  adapter: postgresql
+  encoding: utf8
+  reconnect: false
+  database: postgresql_iut1
+  pool: 5
+  username: coursera_postgresql_user
+  password: KIWn4eCO6m5GJrKbOMGC4VHsXhwfaWDg
+  host: localhost
+
 
 production:
-  <<: *default
-  database: coursera_postgresql
+  adapter: postgresql
+  encoding: utf8
+  reconnect: false
+  database: postgresql_iut1
+  pool: 5
+  username: coursera_postgresql_user
+  password: KIWn4eCO6m5GJrKbOMGC4VHsXhwfaWDg
+  host: dpg-cqqjnfrv2p9s73b8nrkg-a
