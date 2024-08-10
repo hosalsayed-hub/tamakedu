@@ -1,6 +1,6 @@
 databases:
-  - name:  coursera-postgresql-omrx
-    databaseName: postgresql_iut1
+  - name:  coursera-postgresql
+    databaseName: postgresql
     user: coursera_postgresql_user
     plan: starter
 
