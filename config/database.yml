@@ -3,8 +3,8 @@ development:
  encoding: unicode
  database: postgresql
  username: coursera_postgresql_user
- url: <%= ENV['internal database'] %>
- password: <%= ENV['password'] %>
+ url: 'postgresql://coursera_postgresql_user:KIWn4eCO6m5GJrKbOMGC4VHsXhwfaWDg@dpg-cqqjnfrv2p9s73b8nrkg-a/postgresql_iut1'
+ password: 'KIWn4eCO6m5GJrKbOMGC4VHsXhwfaWDg'
  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
 
 test:
@@ -21,8 +21,8 @@ production:
  encoding: unicode
  database: postgresql
  username: coursera_postgresql_user
- url: <%= ENV['internal database'] %>
- password: <%= ENV['password'] %>
+ url: 'postgresql://coursera_postgresql_user:KIWn4eCO6m5GJrKbOMGC4VHsXhwfaWDg@dpg-cqqjnfrv2p9s73b8nrkg-a/postgresql_iut1'
+ password: 'KIWn4eCO6m5GJrKbOMGC4VHsXhwfaWDg'
  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
 
 
