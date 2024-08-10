@@ -3,7 +3,7 @@ development:
  encoding: 'unicode'
  database: 'postgresql'
  username: 'coursera_postgresql_user'
- url: 'postgresql://coursera_postgresql_user:KIWn4eCO6m5GJrKbOMGC4VHsXhwfaWDg@dpg-cqqjnfrv2p9s73b8nrkg-a/postgresql_iut1'
+ url: 'postgresql://coursera_postgresql_user:eUnn7zpPs2em4bTaj1NAAT7QM9oXDBIX@dpg-cqmm6btds78s73918e2g-a.oregon-postgres.render.com/coursera_postgresql'
  password: 'KIWn4eCO6m5GJrKbOMGC4VHsXhwfaWDg'
  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
 
@@ -21,7 +21,7 @@ production:
  encoding: 'unicode'
  database: 'postgresql'
  username: 'coursera_postgresql_user'
- url: 'postgresql://coursera_postgresql_user:KIWn4eCO6m5GJrKbOMGC4VHsXhwfaWDg@dpg-cqqjnfrv2p9s73b8nrkg-a/postgresql_iut1'
+ url: 'postgresql://coursera_postgresql_user:eUnn7zpPs2em4bTaj1NAAT7QM9oXDBIX@dpg-cqmm6btds78s73918e2g-a.oregon-postgres.render.com/coursera_postgresql'
  password: 'KIWn4eCO6m5GJrKbOMGC4VHsXhwfaWDg'
  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
 
