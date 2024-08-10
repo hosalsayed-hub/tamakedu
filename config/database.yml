@@ -1,26 +1,17 @@
-default: &default
-  adapter: postgresql
-  encoding: unicode
- 
-  username: 'coursera_postgresql_user'
-  password: 'KIWn4eCO6m5GJrKbOMGC4VHsXhwfaWDg'
-  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
-
 development:
-  <<: *default
  database: postgresql_iut1
 
 test:
-  <<: *default
   database: postgresql_iut1
 
 production:
-  <<: *default
+  adapter: postgresql
+  encoding: unicode
   database: postgresql_iut1
   username: coursera_postgresql_user
   url: <%= ENV['internal database'] %>
   password: <%= ENV['password'] %>
-
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
 
 
   
