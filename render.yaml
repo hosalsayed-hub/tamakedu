@@ -6,7 +6,7 @@ databases:
 
 services:
   - type: web
-    name: coursera-postgresql-omrx
+    name: coursera-postgresql
     runtime: ruby
     plan: free
     buildCommand: "./bin/render-build.sh"
