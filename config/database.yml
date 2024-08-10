@@ -1,27 +1,25 @@
-development:
-  adapter: 'postgresql'
-  encoding: 'unicode'
-  database: 'postgresql_iut1'
+default: &default
+  adapter: postgresql
+  encoding: unicode
+ 
   username: 'coursera_postgresql_user'
   password: 'KIWn4eCO6m5GJrKbOMGC4VHsXhwfaWDg'
-  pool:  5 
-  
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+
+development:
+  <<: *default
+ database: postgresql_iut1
 
 test:
-  adapter: 'postgresql'
-  encoding: 'unicode'
-  database: 'postgresql_iut1'
-  username: 'coursera_postgresql_user'
-  password: 'KIWn4eCO6m5GJrKbOMGC4VHsXhwfaWDg'
-  pool:  5 
+  <<: *default
+  database: postgresql_iut1
 
 production:
-  adapter: 'postgresql'
-  encoding: 'unicode'
-  database: 'postgresql_iut1'
-  username: 'coursera_postgresql_user'
-  password: 'KIWn4eCO6m5GJrKbOMGC4VHsXhwfaWDg'
-  pool:  5 
+  <<: *default
+  database: postgresql_iut1
+  username: coursera_postgresql_user
+  url: <%= ENV['internal database'] %>
+  password: <%= ENV['password'] %>
 
 
 
